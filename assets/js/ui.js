@@ -6,6 +6,7 @@ let historyIndex;
 let isHistorySave = true;
 let isShuffle = false;
 let isAnswerDone = false;
+let isHighlight = false;
 
 
 class CurrentTest {
@@ -389,26 +390,27 @@ function check(optionIndex) {
   //   return;
   // } 
 
-  if(isHistorySave){   
+  if (isHistorySave){   
     saveTestHistory(optionIndex);
   }
 
-
+  
 
   //  LearnMode //////////////////////////
   //при верном ответе автоматически преходит на следующий вопрос, в новой редакции переход осуществляется пользователем
   //if (isLearnMode === true && optionIndex != rightOptionIndex) { 
   ///////////////////////////////////////////////////////////////////////////
-  if (isLearnMode === true) { 
-    setTrainingMode(optionIndex);
-    currentIndex.index++;
-    return;
-  } 
+ // if (isLearnMode === true) {   
+
+  let condition = isHighlight ? isLearnMode : isLearnMode && optionIndex != rightOptionIndex; 
+
+  if (condition) { 
+      setTrainingMode(optionIndex); 
+      currentIndex.index++; 
+      return; 
+  }  
 
   currentIndex.index++;
-
-
-
   updateQuestionBlock();
 
 }

@@ -146,10 +146,12 @@ function apply(togglesState){
   document.getElementById('theme_toggle').checked = togglesState.isDarkTheme; 
   document.getElementById('shuffle_toggle').checked = togglesState.isShuffle;
   document.getElementById('learn_mode_toggle').checked = togglesState.isLearn;
+  document.getElementById('highlight_toggle').checked = togglesState.isHighlight;
 
 
   isLearnMode = togglesState.isLearn;
   isShuffle = togglesState.isShuffle;
+  isHighlight = togglesState.isHighlight;
 
   if (togglesState.isDarkTheme == true) { 
 
@@ -189,7 +191,8 @@ function saveSettings(){
    // isHistory:document.getElementById('save_history_toggle').checked,
     isLearn:document.getElementById('learn_mode_toggle').checked,
     isShuffle:document.getElementById('shuffle_toggle').checked,
-    isDarkTheme:document.getElementById('theme_toggle').checked
+    isDarkTheme:document.getElementById('theme_toggle').checked,
+    isHighlight:document.getElementById('highlight_toggle').checked
   }
 
   apply(togglesState);
