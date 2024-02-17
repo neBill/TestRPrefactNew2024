@@ -94,6 +94,8 @@ function showHistoryDropdown(){
 
   //document.getElementById("dropDown_History").style.display = "block";
   document.getElementById("dropDown_History").classList.toggle("visible");
+
+
 }
 
 function showMenu() {
@@ -113,6 +115,22 @@ function hideMenu() {
   document.getElementById("dropDownMenu").classList.remove("visible");  
 
   saveSettings();
+}
+
+function showHideHisotryMenu() { 
+
+  let isMenuVisibile = document.getElementById("dropDown_History").classList.contains('visible') ;
+
+  if(isMenuVisibile) {    
+
+   document.getElementById("dropDown_History").classList.remove('visible')
+
+  } else {
+
+    document.getElementById("dropDown_History").classList.add('visible')
+  }
+
+ 
 }
 
 function hideHelpPage() {

@@ -20,9 +20,27 @@
       <div class="header" id="header_block">
 
         
+        <div class="menu-button-block">
+          <button onclick="showMenu()" class="dropbtn" id="button_menu">            
+            <svg>  
+              <rect class="svg-burger"></rect>
+              <rect class="svg-burger" y="8"></rect>
+              <rect class="svg-burger" y="16"></rect>
+            </svg>          
+          </button>
+
+        </div>
+        <div class="main-help-button-block">
+          <button class="main-help-button" id="help-main-page" onclick="showHelpPage()">?</button>  
+        </div>
+
+      </div>
+
         
-        <div class="dropdown-block"> 
-          <div >
+        
+      <!-- <div class="dropdown-block">  -->
+
+          <!-- <div class="menu-button-block">
             <button onclick="showMenu()" class="dropbtn" id="button_menu">            
               <svg>  
                 <rect class="svg-burger"></rect>
@@ -31,6 +49,17 @@
               </svg>          
             </button>
           </div>
+          <div class="main-help-button-block">
+            <button onclick="" class="help-main-button" id="help-main-page">            
+              <svg>  
+                <rect class="svg-burger"></rect>
+                <rect class="svg-burger" y="8"></rect>
+                <rect class="svg-burger" y="16"></rect>
+              </svg>          
+            </button>
+          </div> -->
+
+         
           
             
           <div class="dropdown-content" id="dropDownMenu"> 
@@ -123,30 +152,30 @@
             <br>
             
           </div>
-        </div>
+        <!-- </div> -->
 
         <!-- <div class="hist-block">
           <button  class="history_button" id="">История</button>
         </div>  -->
         
-      </div>
+      <!-- </div> -->
       
-  		<div class="history_block" id="main_page">
+  		<div class="history_block" id="history_dropdown_block">
 
-        <div class="clear_history_block" id ="remove_history_block">
-       
-          <button class="clear_history_button" id="clear_current_hisory" onclick="showHistoryDropdown()">История</button>
+        <div class="clear_history_block" id ="remove_history_block">       
+          <button class="clear_history_button" id="clear_current_hisory" onclick="showHideHisotryMenu()">История</button>
         </div>
 
-        <!-- <div class="dropdown-content" id="dropDownMenu">  -->
         
-        <div class="history_dropdown" id="dropDown_History" >
         
-
-          <!-- <p><b>Удалить историю теста</b></p>     -->
+        <div class="history_dropdown" id="dropDown_History" >   
 
           <button class="menu_button" id="history_remover" onclick="clearCurrentHistory()">Удалить 
             историю теста</button><br>
+            <hr class="line"/>
+
+          <button class="menu_button" id="history_remover" onclick="showHideHisotryMenu()">Закрыть
+              </button><br>
 
         </div>
         
@@ -167,7 +196,7 @@
         <button id="ot_maxim" class="test_button">Охрана труда 2</button>
         <button id="micro_5"  class="test_button">Микротесты 5 р</button>
         <button id="micro_6" class="test_button">Микротесты 6 р</button>        
-        <button id="temp_test"  class="test_button" >Test</button>
+        <!-- <button id="temp_test"  class="test_button" >Test</button> -->
         <!-- <br><br><br><br><br><br>
         <button id="help" class="button" onclick="document.location='assets/help.html'">Помощь</button> -->
       </div>
@@ -272,7 +301,7 @@
     <script src="/assets/js/ui.js"></script>
     <script src="/assets/js/data.js"></script>
     <script src="/assets/js/ot.js"></script>
-    <script src="/assets/js/temp.js"></script>
+    <!-- <script src="/assets/js/temp.js"></script> -->
     <script src="/assets/js/micro5.js"></script>
     <script src="/assets/js/micro6.js"></script>
     <script src="/assets/js/otmaxim.js"></script>

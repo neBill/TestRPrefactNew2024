@@ -12,7 +12,7 @@
  
 }
 
-.font-size-change:active, .menu_button:active, .close_button:active, .clear_history_button:active{
+.font-size-change:active, .menu_button:active, .close_button:active{
   color: var(--main-fg-color);  
 }
 

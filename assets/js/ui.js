@@ -273,7 +273,7 @@ button_home.addEventListener("click", function(event) {
     showResultsPage();
     showTestResult(false);
 
-
+    document.getElementById("dropDown_History").classList.remove('visible')    
 
   }
   if (buttonText == "На главную") { 
@@ -441,6 +441,8 @@ function showMainPage() {
   document.getElementById('test').style.display = "none";
   document.getElementById('nav_block').style.display = "none";
   document.getElementById('result').style.display = "none";
+  //document.getElementById("dropDown_History").classList.toggle("visible");
+  //document.getElementById('dropDown_History').classList.remove("visible");
 
 }
 
@@ -456,7 +458,7 @@ function showLevels() {
   document.getElementById('results').style.display = "none";
   document.getElementById('test').style.display = "none";
   document.getElementById('button_menu').style.display = "block";
-  document.getElementById('header_block').style.display = "block";
+  document.getElementById('header_block').style.display = "flex";
   document.getElementById('remove_history_block').style.display = "none";
 
       wrongAnswers.errors.length = 0;
@@ -590,7 +592,7 @@ function chooseTest(testId) {
     ot_maxim : test_maxim,
     micro_5 : micro_5,
     micro_6 : micro_6,
-    temp_test : test, 
+    // temp_test : test, 
   }
   return testList[testId];
 }

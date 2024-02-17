@@ -74,7 +74,19 @@ body.dark-theme {
   max-height: 44px;
 }
 
+.dropdown-block{
 
+  background: #7d8fb3;
+  display: inline;
+  
+  
+}
+
+/* .main-help-button-block{
+
+  float: right;
+
+} */
 
 .clear_history_button{
   
@@ -242,10 +254,53 @@ p{
 }
 
 .header{  
-  height: 40px;
-  padding: 0% 1%;  
-  display: block; 
+  height: 10%;
+  padding: 2% 2%;   
+  /* background: blue; */
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
   
+}
+
+.main-help-button-block, .menu-button-block{
+
+  /* background-color: chartreuse; */
+  margin: 4px;
+  width: 50%;
+  height: 8%;
+  text-align: left;
+  
+
+}
+.main-help-button-block{ 
+  text-align: right;
+}
+
+.main-help-button{
+
+  background-color: var(--body-fon);
+  
+  color: var(--main-bg-color);
+  /* padding: 10px; */
+  text-align: center;
+  border: 1px var(--border-color);
+  border-radius: 50%;
+  /* text-decoration: none; */
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 2px;
+  /* cursor: pointer; */
+  width: 32px;
+  height: 32px;
+}
+
+.main-help-button:active, .clear_history_button:active {
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: var(--main-fg-color);
+  border-color: var(--main-fg-color);
+
 }
 
 .footer{    
@@ -276,7 +331,11 @@ button::-moz-focus-inner {
   border: 0 !important;
 }
 
+.help-block{
 
+
+  background: green;
+}
 
 .dropbtn {
    
@@ -304,7 +363,25 @@ button::-moz-focus-inner {
 /* .dropdown-block{
 
   background-color: red;
+  margin: 2%;
+  display: block;
+  width: 60%;
 } */
+
+/* .menu-button-block{
+
+  background-color: rgb(233, 24, 153); 
+  width: 48%;
+} */
+
+/* .main-help-button-block{
+
+  background-color: rgb(44, 168, 106);
+  width: 48%;
+  float: right;
+} */
+
+
 
 .history_dropdown{
   /* background-color: #75b37f; */
