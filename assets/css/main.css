@@ -391,11 +391,13 @@ button::-moz-focus-inner {
   top: 9%;
   width: 60%;
   padding: 26px 14px; 
-  height: 8%;
+  height: auto;
   border: 1px var(--border-color);
+  margin-top: 10px;
 }
 
 .history_block{
+  
   padding-left: 2%;
   width: 100%;
   max-width: 100%;
@@ -407,6 +409,20 @@ button::-moz-focus-inner {
   /* background-color: aqua; */
   float: right;
   
+}
+
+.legend{
+
+  font-size: 18px;
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.fieldset{  
+  
+  border: 1px  var(--border-color);
+  border-radius: 5px;  
+
 }
 
 

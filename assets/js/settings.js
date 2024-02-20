@@ -148,6 +148,22 @@ function showHelpPage() {
 }
 
 
+function showProfilePage() {
+
+  document.getElementById("profile_block").style.display = "block"; 
+  //hideMenu();
+
+}
+
+function hideProfilePage() {
+
+  document.getElementById("profile_block").style.display = "none"; 
+  //alert('hhh')
+
+}
+
+
+
 
 function loadSettings(){
 

@@ -63,6 +63,14 @@
           
             
           <div class="dropdown-content" id="dropDownMenu"> 
+
+            <p><b>Настройки профиля</b></p> 
+            <button class="menu_button" id="" onclick="showProfilePage()">Настроить</button><br>
+
+
+            <hr class="line"> 
+
+
             <p><b>Настройки тестирования</b></p> 
            
             <div class="toggle_block">
@@ -168,7 +176,12 @@
 
         
         
-        <div class="history_dropdown" id="dropDown_History" >   
+        <div class="history_dropdown" id="dropDown_History" > 
+
+          <button class="menu_button" id="history_remover" onclick="showHideHisotryMenu()">Текущая история
+          </button><br>
+
+          <hr class="line"/>  
 
           <button class="menu_button" id="history_remover" onclick="clearCurrentHistory()">Удалить 
             историю теста</button><br>
@@ -297,6 +310,72 @@
        
         
       </div>
+
+      <!-- блок настроек профиля -->
+
+      <div class="help_page" id="profile_block">
+
+        <!-- <div class="">  
+
+
+       </div> -->
+
+       <!-- <form action="/action_page.php"> -->
+        <!-- <p>Please select your favorite Web language:</p> -->
+      <!--   <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label> -->
+      
+        <!-- <br>   -->
+      
+        <!-- <p>Please select your age:</p>
+        <input type="radio" id="age1" name="age" value="30">
+        <label for="age1">0 - 30</label><br>
+        <input type="radio" id="age2" name="age" value="60">
+        <label for="age2">31 - 60</label><br>  
+        <input type="radio" id="age3" name="age" value="100">
+        <label for="age3">61 - 100</label><br><br>
+        <input type="submit" value="Submit">
+      </form> -->
+        
+         
+
+          
+               
+        <div >
+          <button padding-bottom="2%" class="menu_button" id="help_hide" onclick="hideProfilePage()"><< Назад</button><br><br>          
+        </div>
+       
+       <fieldset class="fieldset" id="division">
+        <legend class="legend"> Подразделение </legend>          
+          <br><input type="radio" id="pirolise" name="div" value="">
+          <label for="pirolise">Пиролиз</label><br><br>
+          <input type="radio" id="peregon" name="div" value="">
+          <label for="peregon">Перегонка</label><br><br>
+          <input type="radio" id="hydrir" name="div" value="">
+          <label for="hydrir">Гидрирование</label><br><br>
+          <input type="radio" id="separation" name="div" value="">
+          <label for="separation">Газоразделение</label><br><br>
+          <input type="radio" id="compression" name="div" value="">
+          <label for="compression">Компрессия</label><br><br>
+      </fieldset><br><br>
+      <fieldset class="fieldset" id="level">
+        <legend class="legend">Уровень</legend>         
+          <br><input type="radio" id="general" name="lev" value="child">
+          <label for="general">Старший</label><br><br>
+          <input type="radio" id="range6" name="lev" value="adult">
+          <label for="range6">6 разряд</label><br><br>
+          <input type="radio" id="range5" name="lev" value="senior">
+          <label for="range5">5 разряд</label><br><br>  
+    </fieldset>
+      
+
+      </div>
+
+      <!-- конец блока настроек профиля -->
     
     <script src="/assets/js/ui.js"></script>
     <script src="/assets/js/data.js"></script>
