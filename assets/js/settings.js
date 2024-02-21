@@ -63,7 +63,7 @@ window.addEventListener("load", ()=>{
   loadSettings();
   // testList.push(test);
   //document.body.className = 'light-theme';
-
+  createButtons();
 
 
 
@@ -114,6 +114,8 @@ function hideMenu() {
 
   document.getElementById("dropDownMenu").classList.remove("visible");  
 
+  
+
   saveSettings();
 }
 
@@ -150,6 +152,8 @@ function showHelpPage() {
 
 function showProfilePage() {
 
+  //alert("ddd")
+
   document.getElementById("profile_block").style.display = "block"; 
   //hideMenu();
 
@@ -181,6 +185,8 @@ function apply(togglesState){
   document.getElementById('shuffle_toggle').checked = togglesState.isShuffle;
   document.getElementById('learn_mode_toggle').checked = togglesState.isLearn;
   document.getElementById('highlight_toggle').checked = togglesState.isHighlight;
+  document.getElementById(togglesState.div).checked = "true";
+  document.getElementById(togglesState.lev).checked = "true";
 
 
   isLearnMode = togglesState.isLearn;
@@ -202,7 +208,6 @@ function apply(togglesState){
 
 }
 
-
 // document.getElementById('themeToggle').addEventListener('click', function() {
 //     // Этот код будет выполняться при каждом клике на кнопку
 
@@ -221,13 +226,21 @@ function apply(togglesState){
 
 function saveSettings(){  
 
+  const [division, level] = getCheckedTest();
+
   const togglesState = {
-   // isHistory:document.getElementById('save_history_toggle').checked,
+   
     isLearn:document.getElementById('learn_mode_toggle').checked,
     isShuffle:document.getElementById('shuffle_toggle').checked,
     isDarkTheme:document.getElementById('theme_toggle').checked,
-    isHighlight:document.getElementById('highlight_toggle').checked
+    isHighlight:document.getElementById('highlight_toggle').checked,
+    div:division,
+    lev:level,
+   
+
   }
+
+ // alert(JSON.stringify(togglesState))
 
   apply(togglesState);
 
@@ -238,6 +251,117 @@ function saveSettings(){
 //   // generate a random string
 //   return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
 // }
+
+function getCheckedTest(){
+
+  let div, lev;  
+
+  let radioDevs = document.querySelectorAll('input[type="radio"]');
+
+    for (let radio of radioDevs) {
+      if (radio.checked) {
+        if(radio.name === "div") {
+          div = radio.id;
+        }
+        else if (radio.name === "lev") {
+          lev = radio.id;
+        }
+      }
+	}
+ 
+
+// alert(div + " -- " + lev )
+  return [div, lev];
+
+}
+
+function createButtons(){
+
+  let r = "5p";
+
+  let mt =  `Микротесты ${r}`;    
+ 
+   const buttons5 = [`База ${r}`, `Стандарт ${r}`, `Эксперт ${r}`, "Охрана труда 1", "Охрана труда 2", ];
+ 
+   buttons5.push(mt);
+
+  for(let i = 0; i < buttons5.length; i++){
+
+    let btn = document.createElement('button')
+    btn.innerText=buttons5[i]
+    btn.className = 'test_button'
+    btn.id = i
+    document.querySelector('#levels').appendChild(btn)
+  }
+}
+
+
+function getButtons(){
+
+
+  
+ 
+  // const pirolise = {
+
+  //   b5:pir_b5,
+  //   s5:pir_s5,
+  //   e5:pir_e5,
+  //   b6:pir_b6,
+  //   s6:pir_s6,
+  //   e6:pir_e6,
+
+
+  // }
+
+  // const buttons5 = {
+       
+  //   ot1:"Охрана труда 1",
+  //   ot2:"Охрана труда 2",
+  //   basa5:"База 5р",
+  //   standart5:"Стандарт 5 р",
+  //   expert5:"Эксперт 5р",
+  //   micro5:"Микротесты 5р",
+
+  // }
+
+  // const buttons6 = {
+
+  //   ot1:"Охрана труда 1",
+  //   ot2:"Охрана труда 2",    
+  //   basa6:"База 6р",
+  //   standart6:"Стандарт 6 р",
+  //   expert6:"Эксперт 6р",
+  //   micro6:"Микротесты 6р",
+
+  // }
+  // const buttonsSt = {
+   
+  //   ot1:"Охрана труда 1",
+  //   ot2:"Охрана труда 2",   
+  //   basaSt:"База ст.",
+  //   standart6:"Стандарт ст.",
+  //   expert6:"Эксперт ст.",
+
+  // }
+ let r = "5p"
+
+ let mt =  `Микротесты ${r}`
+
+
+
+  //const buttonsSt = ["Охрана труда 1", "Охрана труда 2",  `База ст.`, "Стандарт ст.", "Эксперт ст.",]
+
+  const buttons5 = ["Охрана труда 1", "Охрана труда 2", `База ${r}`, `Стандарт ${r}`, `Эксперт ${r}`]
+
+  buttons5.push(mt)
+  
+  //const buttons6 = ["Охрана труда 1", "Охрана труда 2", "База 6р", "Стандарт 6р", "Эксперт 6р", "Микротесты 6р"]
+
+  createButtons(buttons5)
+
+}
+
+
 
 
 

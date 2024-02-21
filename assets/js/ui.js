@@ -7,6 +7,9 @@ let isHistorySave = true;
 let isShuffle = false;
 let isAnswerDone = false;
 let isHighlight = false;
+// let defaultDevision = "separation";
+// let defaultLevel = "general";
+
 
 
 class CurrentTest {

@@ -202,16 +202,16 @@
         
     	<div id="levels" class="levels-block">
        
-        <button id="level_5b"  class="test_button">5 стандарт</button>  
+        <!-- <button id="level_5b"  class="test_button">5 стандарт</button>  
         <button id="level_6b"  class="test_button">6 стандарт</button>      
         <button id="level_6e" class="test_button">6 эксперт</button>  
         <button id="ot" class="test_button">Охрана труда 1</button>
         <button id="ot_maxim" class="test_button">Охрана труда 2</button>
         <button id="micro_5"  class="test_button">Микротесты 5 р</button>
-        <button id="micro_6" class="test_button">Микротесты 6 р</button>        
-        <!-- <button id="temp_test"  class="test_button" >Test</button> -->
-        <!-- <br><br><br><br><br><br>
-        <button id="help" class="button" onclick="document.location='assets/help.html'">Помощь</button> -->
+        <button id="micro_6" class="test_button">Микротесты 6 р</button>         -->
+
+        <button  class="footer_button" id="help_hide" onclick="getButtons()">Create buttons</button>
+        
       </div>
       
     	<div class="results-block" id="results">		
@@ -242,6 +242,10 @@
 
 
       <div class="help_page" id="help_block">
+
+        <br><br><div >
+          <button  class="footer_button" id="help_hide" onclick="hideHelpPage()">На главную</button><br> 
+        <br>
 
         <div class="help-text-format">  
         
@@ -349,7 +353,7 @@
           <button padding-bottom="2%" class="menu_button" id="help_hide" onclick="hideProfilePage()"><< Назад</button><br><br>          
         </div>
        
-       <fieldset class="fieldset" id="division">
+       <fieldset class="fieldset" id="divisionSet">
         <legend class="legend"> Подразделение </legend>          
           <br><input type="radio" id="pirolise" name="div" value="">
           <label for="pirolise">Пиролиз</label><br><br>
@@ -357,20 +361,24 @@
           <label for="peregon">Перегонка</label><br><br>
           <input type="radio" id="hydrir" name="div" value="">
           <label for="hydrir">Гидрирование</label><br><br>
-          <input type="radio" id="separation" name="div" value="">
+          <input type="radio" id="separation" name="div" value="" checked>
           <label for="separation">Газоразделение</label><br><br>
           <input type="radio" id="compression" name="div" value="">
           <label for="compression">Компрессия</label><br><br>
       </fieldset><br><br>
-      <fieldset class="fieldset" id="level">
+      <fieldset class="fieldset" id="levelSet">
         <legend class="legend">Уровень</legend>         
-          <br><input type="radio" id="general" name="lev" value="child">
+          <br><input type="radio" id="general" name="lev" value="" checked>
           <label for="general">Старший</label><br><br>
-          <input type="radio" id="range6" name="lev" value="adult">
-          <label for="range6">6 разряд</label><br><br>
-          <input type="radio" id="range5" name="lev" value="senior">
-          <label for="range5">5 разряд</label><br><br>  
+          <input type="radio" id="level6" name="lev" value="">
+          <label for="lavel6">6 разряд</label><br><br>
+          <input type="radio" id="level5" name="lev" value="">
+          <label for="level5">5 разряд</label><br><br>  
     </fieldset>
+
+    <br><br>
+
+    <button class="menu_button" onclick="getCheckedTest()">зад</button><br><br> 
       
 
       </div>
