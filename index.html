@@ -28,8 +28,8 @@
               <rect class="svg-burger" y="16"></rect>
             </svg>          
           </button>
-
         </div>
+
         <div class="main-help-button-block">
           <button class="main-help-button" id="help-main-page" onclick="showHelpPage()">?</button>  
         </div>
@@ -38,135 +38,136 @@
 
         
         
-      <!-- <div class="dropdown-block">  -->
+          <!-- <div class="dropdown-block">  -->
 
-          <!-- <div class="menu-button-block">
-            <button onclick="showMenu()" class="dropbtn" id="button_menu">            
-              <svg>  
-                <rect class="svg-burger"></rect>
-                <rect class="svg-burger" y="8"></rect>
-                <rect class="svg-burger" y="16"></rect>
-              </svg>          
-            </button>
-          </div>
-          <div class="main-help-button-block">
-            <button onclick="" class="help-main-button" id="help-main-page">            
-              <svg>  
-                <rect class="svg-burger"></rect>
-                <rect class="svg-burger" y="8"></rect>
-                <rect class="svg-burger" y="16"></rect>
-              </svg>          
-            </button>
-          </div> -->
+              <!-- <div class="menu-button-block">
+                <button onclick="showMenu()" class="dropbtn" id="button_menu">            
+                  <svg>  
+                    <rect class="svg-burger"></rect>
+                    <rect class="svg-burger" y="8"></rect>
+                    <rect class="svg-burger" y="16"></rect>
+                  </svg>          
+                </button>
+              </div>
+              <div class="main-help-button-block">
+                <button onclick="" class="help-main-button" id="help-main-page">            
+                  <svg>  
+                    <rect class="svg-burger"></rect>
+                    <rect class="svg-burger" y="8"></rect>
+                    <rect class="svg-burger" y="16"></rect>
+                  </svg>          
+                </button>
+              </div> -->
 
          
           
             
-          <div class="dropdown-content" id="dropDownMenu"> 
+      <div class="dropdown-content" id="dropDownMenu"> 
 
-            <p><b>Настройки профиля</b></p> 
-            <button class="menu_button" id="" onclick="showProfilePage()">Настроить</button><br>
-
-
-            <hr class="line"> 
+        <p><b>Настройки профиля</b></p> 
+        <button class="menu_button" id="" onclick="showProfilePage()">Настроить</button><br>
 
 
-            <p><b>Настройки тестирования</b></p> 
-           
-            <div class="toggle_block">
-              <div class="toggle_txt">
-               <label class='Toggle'>Режим обучения</label>
-              </div>
-              <div class="toggle_btn">
-              <label class='Toggle'>
-                <input type='checkbox' name='toggle' id='learn_mode_toggle' class="Toggle__input" unchecked />
-                <span class="Toggle__display" hidden/>
-              </label>
-              </div>
-            </div>
+        <hr class="line"> 
 
-            <div class="toggle_block">
-              <div class="toggle_txt">
-               <label class='Toggle'>Перемешать вопросы</label>
-              </div>
-              <div class="toggle_btn">
-              <label class='Toggle'>
-                <input type='checkbox' name='toggle' id='shuffle_toggle' class="Toggle__input" unchecked />
-                <span class="Toggle__display" hidden/>
-              </label>
-              </div>
-              
-              <div class="toggle_block">
-                <div class="toggle_txt">
-                 <label class='Toggle'>Подсвечивать правильный ответ</label>
-                </div>
-                <div class="toggle_btn">
-                <label class='Toggle'>
-                  <input type='checkbox' name='toggle' id='highlight_toggle' class="Toggle__input" unchecked />
-                  <span class="Toggle__display" hidden/>
-                </label>
-                </div>
-              </div>              
-            </div><br><br>           
-           
-           <hr class="line"> 
-            
-            <p><b>Оформление</b></p> 
-            <div class="outline">
-              <label id="fontsize">-- Образец шрифта -- </label>
-            </div>
-            <!-- <hr class="line"> -->
-            <button class="font-size-change" id="font-increase" >Увеличить шрифт</button>              
-            <button class="font-size-change" id="font-decrease">Уменьшить шрифт</button>  
-            <button class="font-size-change" id="font-default">Шрифт по-умолчанию</button>  
-            <!--<hr class="line">-->     
 
-            <div class="toggle_block">
-              <div class="toggle_txt">
-               <label class='Toggle'>Темная тема</label>
-              </div>
-              <div class="toggle_btn">
-              <label class='Toggle'>
-                <input type='checkbox' name='toggle' id="theme_toggle" class="Toggle__input" unchecked />
-                <span class="Toggle__display" hidden/>
-              </label>
-              </div>
-            </div><br><br>
-            
-            <hr class="line"/>
-            
-            <p><b>История тестирования</b></p>
-            
-            <button class="menu_button" id="history_remover" onclick="clearCurrentHistory()">Удалить текущую</button><br>
-
-            <button class="menu_button" id="history_remover" onclick="clearAllHistory()">Удалить 
- всю историю</button><br>
-
-            <button class="menu_button" id="cache_remover" onclick="clearCaches()">Очистить кэш</button><br>
-
-            <hr class="line"/>
-
-            
-            <p><b>Дополнительно</b></p>
-          
-            
-               <button class="menu_button" id="help_button" onclick="showHelpPage()">Справка</button>
-            <!-- <button class="menu_button" id="help_button" onclick="dd()">Справка</button> -->
-            
-            <hr class="line">
-
-            
-            <button class="close_button" id="button_hide" onclick="hideMenu()">Закрыть</button>
-            <br>
-            
-          </div>
-        <!-- </div> -->
-
-        <!-- <div class="hist-block">
-          <button  class="history_button" id="">История</button>
-        </div>  -->
+        <p><b>Настройки тестирования</b></p> 
         
-      <!-- </div> -->
+        <div class="toggle_block">
+          <div class="toggle_txt">
+            <label class='Toggle'>Режим обучения</label>
+          </div>
+          <div class="toggle_btn">
+            <label class='Toggle'>
+            <input type='checkbox' name='toggle' id='learn_mode_toggle' class="Toggle__input" unchecked />
+            <span class="Toggle__display" hidden/>
+            </label>
+          </div>
+        </div>
+
+        <div class="toggle_block">
+          <div class="toggle_txt">
+            <label class='Toggle'>Перемешать вопросы</label>
+          </div>
+          <div class="toggle_btn">
+            <label class='Toggle'>
+            <input type='checkbox' name='toggle' id='shuffle_toggle' class="Toggle__input" unchecked />
+            <span class="Toggle__display" hidden/>
+            </label>
+          </div>
+        </div>
+          
+        <div class="toggle_block">
+          <div class="toggle_txt">
+            <label class='Toggle'>Подсвечивать ответ</label>
+          </div>
+          <div class="toggle_btn">
+            <label class='Toggle'>
+            <input type='checkbox' name='toggle' id='highlight_toggle' class="Toggle__input" unchecked />
+            <span class="Toggle__display" hidden/>
+            </label>
+          </div>
+        </div><br><br>  
+
+        <!-- </div><br><br>            -->
+        
+        <hr class="line"> 
+        
+        <p><b>Оформление</b></p> 
+        <div class="outline">
+          <label id="fontsize">-- Образец шрифта -- </label>
+        </div>
+        <!-- <hr class="line"> -->
+        <button class="font-size-change" id="font-increase" >Увеличить шрифт</button>              
+        <button class="font-size-change" id="font-decrease">Уменьшить шрифт</button>  
+        <button class="font-size-change" id="font-default">Шрифт по-умолчанию</button>  
+        <!--<hr class="line">-->     
+
+        <div class="toggle_block">
+          <div class="toggle_txt">
+            <label class='Toggle'>Темная тема</label>
+          </div>
+          <div class="toggle_btn">
+          <label class='Toggle'>
+            <input type='checkbox' name='toggle' id="theme_toggle" class="Toggle__input" unchecked />
+            <span class="Toggle__display" hidden/>
+          </label>
+          </div>
+        </div><br><br>
+        
+        <hr class="line"/>
+        
+        <p><b>История тестирования</b></p>
+        
+        <button class="menu_button" id="history_remover" onclick="clearCurrentHistory()">Удалить текущую</button><br>
+
+        <button class="menu_button" id="history_remover" onclick="clearAllHistory()">Удалить всю историю</button><br>
+
+        <button class="menu_button" id="cache_remover" onclick="clearCaches()">Очистить кэш</button><br>
+
+        <hr class="line"/>
+
+        
+        <p><b>Дополнительно</b></p>
+      
+        
+        <button class="menu_button" id="help_button" onclick="showHelpPage()">Справка</button>
+        <!-- <button class="menu_button" id="help_button" onclick="dd()">Справка</button> -->
+        
+        <hr class="line">
+
+        
+        <button class="close_button" id="button_hide" onclick="hideMenu()">Закрыть</button><br>
+        
+      </div>
+
+          <!-- </div> -->
+
+          <!-- <div class="hist-block">
+            <button  class="history_button" id="">История</button>
+          </div>  -->
+          
+          <!-- </div> -->
       
   		<div class="history_block" id="history_dropdown_block">
 
@@ -178,23 +179,21 @@
         
         <div class="history_dropdown" id="dropDown_History" > 
 
-          <button class="menu_button" id="history_remover" onclick="showHideHisotryMenu()">Текущая история
-          </button><br>
+          <button class="menu_button" id="history_remover" onclick="showHideHisotryMenu()">Текущая история</button><br>
 
           <hr class="line"/>  
 
-          <button class="menu_button" id="history_remover" onclick="clearCurrentHistory()">Удалить 
-            историю теста</button><br>
+          <button class="menu_button" id="history_remover" onclick="clearCurrentHistory()">Удалить историю теста</button><br>
             <hr class="line"/>
 
-          <button class="menu_button" id="history_remover" onclick="showHideHisotryMenu()">Закрыть
-              </button><br>
+          <button class="menu_button" id="history_remover" onclick="showHideHisotryMenu()">Закрыть</button><br>
 
         </div>
-        
-        <p id="test-title"></p>
-        
       </div>
+        
+      <p id="test-title"></p>
+        
+      <!-- </div> -->
       
       <div class="counter-block" id="questions_counter">
         <p id="counter"></p>    
@@ -210,7 +209,7 @@
         <button id="micro_5"  class="test_button">Микротесты 5 р</button>
         <button id="micro_6" class="test_button">Микротесты 6 р</button>         -->
 
-        <button  class="footer_button" id="help_hide" onclick="getButtons()">Create buttons</button>
+        <!-- <button  class="footer_button" id="help_hide" onclick="getButtons()">Create buttons</button> -->
         
       </div>
       
@@ -241,11 +240,11 @@
       </div>
 
 
-      <div class="help_page" id="help_block">
+      <div class="help_page" id="help_block"><br><br>
 
-        <br><br><div >
-          <button  class="footer_button" id="help_hide" onclick="hideHelpPage()">На главную</button><br> 
-        <br>
+        <div >
+          <button  class="footer_button" id="help_hide" onclick="hideHelpPage()">На главную</button><br><br>
+        </div>
 
         <div class="help-text-format">  
         
@@ -253,47 +252,47 @@
 
           <h3> Описание </h3>
 
-            Приложение для подготовки к тестированию ЕКЭ.<br><br>
-            <u>Источники тестовых вопросов:</u><br><br>
+          Приложение для подготовки к тестированию ЕКЭ.<br><br>
+          <u>Источники тестовых вопросов:</u><br><br>
 
-            - вопросы разделов "Микротесты" - базы микротестирования экзаменационной платформы "StartExam" (где проходим микротесты и сдаем ЕКЭ). Вопросы относятся к профуровню "База"; <br>
-            - вопросы разделов "Охрана труда" - сайт "Конструктор тестов"; <br>
-            - вопросы по разрядам и профуровням (пока только газоразделение) - вопросы разработанные ИТР установки для ЕКЭ.
+          - вопросы разделов "Микротесты" - базы микротестирования экзаменационной платформы "StartExam" (где проходим микротесты и сдаем ЕКЭ). Вопросы относятся к профуровню "База"; <br>
+          - вопросы разделов "Охрана труда" - сайт "Конструктор тестов"; <br>
+          - вопросы по разрядам и профуровням (пока только газоразделение) - вопросы разработанные ИТР установки для ЕКЭ.
 
-            <h3>Основные возможности</h3>  
+          <h3>Основные возможности</h3>  
 
-            <h4>1. Сохранение истории тестирования. </h4>
+          <h4>1. Сохранение истории тестирования. </h4>
 
-            История прохождения сохраняется для каждого теста отдельно. При остановке тестирования показываются ошибки. После прохождения всего теста история сбрасывается при повторном выборе данного теста.<br> 
-            Есть возможность сбросить всю историю тестирования нажав пункт меню "Удалить историю". Удаляется история для всех тестов.
-
-
-
-           <h4> 2. Режимы прохождения тестов.</h4>
-            <ul>
-              <li>"<u>Режим контроля</u>" - включен по умолчанию. В этом режиме результаты прохождения показываются при завершении теста или при остановке тестирования;</li>
-              <li>"<u>Режим обучения</u>" - включается в настройках. При включенном переключателе "Режим обучения", если ответ правильный, происходит автоматический переход на с
-                ледующий вопрос. При неверном ответе - показываются верный и неверный варианты ответа. Результаты показываются при завершении теста или при остановке 
-                тестирования.</li>
-                      </ul>
-
-            <h4>3. Опция перемешивания вопросов. </h4>
-
-            "<u>Перемешивание вопросов</u>" - включается в настройках. При включенном переключателе "Перемешивание вопросов" вопросы будут перемешаны при каждом выборе теста. Данный режим позволяет "погонять" вопросы в случайном порядке. При остановке тестирования показываются ошибки.        
-            В данном режиме история сохраняется только в рамках текущей сессии тестирования. При повторном выборе теста, история сбрасывается.<br>
-
-            <h4>4. Оформление. </h4>
-
-              "<u>Темная тема</u>" - включает темную тему приложение. Выключение переключателя включает тему по-умолчанию;<br>
-              Есть возможность изменить размер шрифта или установить значение по-умолчанию.
+          История прохождения сохраняется для каждого теста отдельно. При остановке тестирования показываются ошибки. После прохождения всего теста история сбрасывается при повторном выборе данного теста.<br> 
+          Есть возможность сбросить всю историю тестирования нажав пункт меню "Удалить историю". Удаляется история для всех тестов.
 
 
-            <h3>Поддержка</h3>
 
-            При возникновении вопросов или проблем с приложением - обращайтесь лично или пишите в WhatsApp:         
+          <h4> 2. Режимы прохождения тестов.</h4>
+          <ul>
+            <li>"<u>Режим контроля</u>" - включен по умолчанию. В этом режиме результаты прохождения показываются при завершении теста или при остановке тестирования;</li>
+            <li>"<u>Режим обучения</u>" - включается в настройках. При включенном переключателе "Режим обучения", если ответ правильный, происходит автоматический переход на с
+              ледующий вопрос. При неверном ответе - показываются верный и неверный варианты ответа. Результаты показываются при завершении теста или при остановке 
+              тестирования.</li>
+                    </ul>
+
+          <h4>3. Опция перемешивания вопросов. </h4>
+
+          "<u>Перемешивание вопросов</u>" - включается в настройках. При включенном переключателе "Перемешивание вопросов" вопросы будут перемешаны при каждом выборе теста. Данный режим позволяет "погонять" вопросы в случайном порядке. При остановке тестирования показываются ошибки.        
+          В данном режиме история сохраняется только в рамках текущей сессии тестирования. При повторном выборе теста, история сбрасывается.<br>
+
+          <h4>4. Оформление. </h4>
+
+            "<u>Темная тема</u>" - включает темную тему приложение. Выключение переключателя включает тему по-умолчанию;<br>
+            Есть возможность изменить размер шрифта или установить значение по-умолчанию.
 
 
-            <br><br><h3><a href="https://wa.me/79234090881?text=Привет! Есть+вопрос">Ссылка для связи</a></h3><br><br>
+          <h3>Поддержка</h3>
+
+          При возникновении вопросов или проблем с приложением - обращайтесь лично или пишите в WhatsApp:         
+
+
+          <br><br><h3><a href="https://wa.me/79234090881?text=Привет! Есть+вопрос">Ссылка для связи</a></h3><br><br>
           
          
           
@@ -301,49 +300,47 @@
           
 
           
-        </div> <br>
+        </div><br>
                
         <div >
-            <button padding-bottom="2%" class="footer_button" id="help_hide" onclick="hideHelpPage()">На главную</button><br> 
-         <br>
-          
+            <button padding-bottom="2%" class="footer_button" id="help_hide" onclick="hideHelpPage()">На главную</button><br><br>          
         </div>
-        <div >             
+        <!-- <div >             
          <br><br>
-        </div>
+        </div> -->
        
         
       </div>
 
       <!-- блок настроек профиля -->
 
-      <div class="help_page" id="profile_block">
+      <div class="profile_page" id="profile_block">
 
-        <!-- <div class="">  
+            <!-- <div class="">  
 
 
-       </div> -->
+          </div> -->
 
-       <!-- <form action="/action_page.php"> -->
-        <!-- <p>Please select your favorite Web language:</p> -->
-      <!--   <input type="radio" id="html" name="fav_language" value="HTML">
-        <label for="html">HTML</label><br>
-        <input type="radio" id="css" name="fav_language" value="CSS">
-        <label for="css">CSS</label><br>
-        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-        <label for="javascript">JavaScript</label> -->
-      
-        <!-- <br>   -->
-      
-        <!-- <p>Please select your age:</p>
-        <input type="radio" id="age1" name="age" value="30">
-        <label for="age1">0 - 30</label><br>
-        <input type="radio" id="age2" name="age" value="60">
-        <label for="age2">31 - 60</label><br>  
-        <input type="radio" id="age3" name="age" value="100">
-        <label for="age3">61 - 100</label><br><br>
-        <input type="submit" value="Submit">
-      </form> -->
+          <!-- <form action="/action_page.php"> -->
+            <!-- <p>Please select your favorite Web language:</p> -->
+          <!--   <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label> -->
+          
+            <!-- <br>   -->
+          
+            <!-- <p>Please select your age:</p>
+            <input type="radio" id="age1" name="age" value="30">
+            <label for="age1">0 - 30</label><br>
+            <input type="radio" id="age2" name="age" value="60">
+            <label for="age2">31 - 60</label><br>  
+            <input type="radio" id="age3" name="age" value="100">
+            <label for="age3">61 - 100</label><br><br>
+            <input type="submit" value="Submit">
+          </form> -->
         
          
 
@@ -353,8 +350,8 @@
           <button padding-bottom="2%" class="menu_button" id="help_hide" onclick="hideProfilePage()"><< Назад</button><br><br>          
         </div>
        
-       <fieldset class="fieldset" id="divisionSet">
-        <legend class="legend"> Подразделение </legend>          
+        <fieldset class="fieldset" id="divisionSet">
+          <legend class="legend"> Подразделение </legend>          
           <br><input type="radio" id="pirolise" name="div" value="">
           <label for="pirolise">Пиролиз</label><br><br>
           <input type="radio" id="peregon" name="div" value="">
@@ -365,8 +362,8 @@
           <label for="separation">Газоразделение</label><br><br>
           <input type="radio" id="compression" name="div" value="">
           <label for="compression">Компрессия</label><br><br>
-      </fieldset><br><br>
-      <fieldset class="fieldset" id="levelSet">
+        </fieldset><br><br>
+        <fieldset class="fieldset" id="levelSet">
         <legend class="legend">Уровень</legend>         
           <br><input type="radio" id="general" name="lev" value="" checked>
           <label for="general">Старший</label><br><br>
@@ -374,25 +371,24 @@
           <label for="lavel6">6 разряд</label><br><br>
           <input type="radio" id="level5" name="lev" value="">
           <label for="level5">5 разряд</label><br><br>  
-    </fieldset>
+        </fieldset><br><br>
 
-    <br><br>
+        <!-- <button class="menu_button" onclick="getCheckedTest()">Назад</button><br><br>  -->
 
-    <button class="menu_button" onclick="getCheckedTest()">зад</button><br><br> 
+      </div><!-- конец блока настроек профиля -->
+
+    </div>
+
       
-
-      </div>
-
-      <!-- конец блока настроек профиля -->
     
-    <script src="assets/js/ui.js"></script>
-    <script src="assets/js/data.js"></script>
-    <script src="assets/js/ot.js"></script>
-    <!-- <script src="/assets/js/temp.js"></script> -->
-    <script src="assets/js/micro5.js"></script>
-    <script src="assets/js/micro6.js"></script>
-    <script src="assets/js/otmaxim.js"></script>
-    <script src="assets/js/settings.js"></script>
+      <script src="assets/js/ui.js"></script>
+      <script src="assets/js/data.js"></script>
+      <script src="assets/js/ot.js"></script>
+      <!-- <script src="/assets/js/temp.js"></script> -->
+      <script src="assets/js/micro5.js"></script>
+      <script src="assets/js/micro6.js"></script>
+      <script src="assets/js/otmaxim.js"></script>
+      <script src="assets/js/settings.js"></script>
     
   </body>
 </html>

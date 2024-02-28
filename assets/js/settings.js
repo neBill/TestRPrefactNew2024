@@ -56,18 +56,24 @@ function clearCurrentHistory() {
 
 
 window.addEventListener("load", ()=>{
-
-   //loadSettings();
-   document.body.className = 'light-theme';
+   
+  document.body.className = 'light-theme';
 
   loadSettings();
-  // testList.push(test);
-  //document.body.className = 'light-theme';
+ 
   createButtons();
 
 
 
 
+});
+
+window.addEventListener('load', function() {
+  window.history.pushState({}, '')
+});
+
+window.addEventListener('popstate', function() {
+  window.history.pushState({}, '')
 });
 
 

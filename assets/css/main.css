@@ -449,7 +449,7 @@ svg{
   
 }
 
-.help_page {
+.help_page, .profile_page {
   position: absolute;
   z-index:  100;
   top: 0px;
